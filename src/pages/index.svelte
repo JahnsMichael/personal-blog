@@ -1,14 +1,10 @@
 <div class="hero">
-  <h1>Routify blog example</h1>
-  <code>npx @roxi/routify init --branch blog</code>
-  
-  <ul class="checks">
-    <li>☑ Markdown with mdsvex</li>
-    <li>☑ PostCSS</li>
-    <li>☑ Auto generated navigation</li>
-    <li>☑ Auto generated page titles</li>
-    <li>☑ 100% Lighthouse score</li>
-  </ul>
+  <p>Hi, my name is Jahns Michael.</p>
+  <p>You can call me Jahns or Michael.</p>
+  <h1>anyway, Welcome~</h1>
+  <p>Feel free to explore my site.</p>
+  <p>There's not much in here anyway.</p>
+  <p>At least now.</p>
 </div>
 
 <!-- routify:options index=10 -->

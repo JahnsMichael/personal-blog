@@ -7,3 +7,9 @@
     <a href={$url(path)} class:active={$isActive(path)}>{title}</a>
   {/each}
 </nav>
+
+<style>
+  a {
+    font-family: Bitter;
+  }
+</style>
