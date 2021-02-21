@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&display=swap');
+
 html,
 body {
   position: relative;
@@ -11,8 +13,7 @@ body {
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -67,4 +68,14 @@ button:not(:disabled):active {
 
 button:focus {
   border-color: #666;
+}
+
+/* custom style */
+h1, h2, h3, h4, .title {
+  font-family: 'Bitter', serif;
+}
+
+/* override prism styling */
+code, pre {
+  font-family: 'Victor Mono' !important
 }
