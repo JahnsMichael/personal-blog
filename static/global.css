@@ -8,8 +8,6 @@ body {
 }
 
 body {
-  /* color: #777; */
-  color: rgba(0,0,0,0.62);
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
@@ -17,10 +15,11 @@ body {
 }
 
 a {
-  color: rgba(0,0,0,0.7);  
+  /* color: rgba(0,0,0,0.7);   */
+  color: var(--theme-primary);  
   
   &:visited {
-    color: rgba(0,0,0,0.6);
+    /* color: rgba(0,0,0,0.6); */
   }
   &:hover {
     text-decoration: underline;
@@ -54,20 +53,7 @@ input[type='range'] {
 
 button {
   color: #333;
-  background-color: #f4f4f4;
   outline: none;
-}
-
-button:disabled {
-  color: #999;
-}
-
-button:not(:disabled):active {
-  background-color: #ddd;
-}
-
-button:focus {
-  border-color: #666;
 }
 
 /* custom style */
