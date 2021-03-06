@@ -1,26 +1,27 @@
 <div class="hero">
+Hi, my name is Jahns Michael.
 
-  Hi, my name is Jahns Michael.
+You can call me Jahns or Michael.
 
-  You can call me Jahns or Michael.
+anyway , ...
 
-  anyway , ...
+# Welcome!
+### ヾ(^ ^ゞ
 
-  # Welcome!
-  ### ヾ(^ ^ゞ
+Feel free to explore my site.
 
-  Feel free to explore my site.
+There's not much in here anyway.
 
-  There's not much in here anyway.
-
-  At least now.
-
+At least now.
 </div>
 
 <style>
+  h1, h3 {
+    color: var(--theme-primary);
+  }
+
   h3 {
     font-weight: normal;
-    color: var(--theme-primary);
   }
 </style>
 
