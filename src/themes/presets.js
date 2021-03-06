@@ -1,7 +1,9 @@
+import { sunO, moonO } from 'svelte-awesome/icons';
+
 export const presets = [
     {
       name: "light",
-      symbol: "🌙",
+      symbol: sunO,
       colors: {
         text: "#282230",
         background: "#f1f1f1",
@@ -10,7 +12,7 @@ export const presets = [
     },
     {
       name: "dark",
-      symbol: "😎",
+      symbol: moonO,
       colors: {
         text: "#f1f1f1",
         background: "#1f2430",
