@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
 html,
 body {
@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 
 a {
@@ -54,11 +54,6 @@ input[type='range'] {
 button {
   color: #333;
   outline: none;
-}
-
-/* custom style */
-h1, h2, h3, h4, .title {
-  font-family: 'Bitter', serif;
 }
 
 /* override prism styling */

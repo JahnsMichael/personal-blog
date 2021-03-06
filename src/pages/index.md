@@ -20,7 +20,6 @@
 <style>
   h3 {
     font-weight: normal;
-    font-family: Roboto, sans-serif;
     color: var(--theme-primary);
   }
 </style>
