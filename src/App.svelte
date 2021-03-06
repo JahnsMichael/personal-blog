@@ -6,8 +6,8 @@
 </script>
 
 <style global>
-  @import "https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css";
   @import "../static/global.css";
+  @import "../static/prism.css";
   @import "../static/blog.pcss";
 
   :global(html) {
