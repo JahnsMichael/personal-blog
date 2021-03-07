@@ -11,8 +11,11 @@ layout: blog
 
 #### Anchor links using remark-slug
 - [{title}](#title)
-- [Nunc sed](#nunc-sed)
-- [Lamina puppe reddid](#lamina-puppe-reddidit)
+  - [Nunc sed](#nunc-sed)
+  - [Lamina puppe reddidit](#lamina-puppe-reddidit)
+  - [Decimo Peleu](#decimo-peleu)
+  - [Sola mea amantior](#sola-mea-amantior)
+  - [Procrin modo concreta animorum tandem aras](#procrin-modo-concreta-animorum-tandem-aras)
 
 ---
 

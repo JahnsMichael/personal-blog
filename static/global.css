@@ -60,3 +60,8 @@ button {
 code, pre {
   font-family: 'Victor Mono' !important
 }
+
+img {
+  width:100%;
+  max-width:600px;
+}
