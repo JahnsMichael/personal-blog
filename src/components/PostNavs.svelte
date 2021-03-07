@@ -16,9 +16,10 @@
     .map((f) => {
       return {
         path: f.path,
-        meta: f.__file.children[0].meta,
+        meta: f.__file.children.filter((c) => c.file == "index.md")[0].meta,
       };
     });
+
 </script>
 
 <ul class="posts">
