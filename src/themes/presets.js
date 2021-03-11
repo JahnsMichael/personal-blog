@@ -15,7 +15,7 @@ export const presets = [
       symbol: moonO,
       colors: {
         text: "#f1f1f1",
-        background: "#1f2430",
+        background: "#292f34",
         primary: "#1abc9c"
       }
     }
