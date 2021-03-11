@@ -5,7 +5,7 @@ export const presets = [
       name: "light",
       symbol: sunO,
       colors: {
-        text: "#282230",
+        text: "#676778",
         background: "#f1f1f1",
         primary: "#ff3e00"
       }
@@ -16,7 +16,7 @@ export const presets = [
       colors: {
         text: "#f1f1f1",
         background: "#1f2430",
-        primary: "#40b3ff"
+        primary: "#1abc9c"
       }
     }
   ];

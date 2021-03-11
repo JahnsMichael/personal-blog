@@ -1,4 +1,4 @@
-<div class="hero">
+<div>
 Hi, my name is Jahns Michael.
 
 You can call me Jahns or Michael.
@@ -16,6 +16,11 @@ At least now.
 </div>
 
 <style>
+  div {
+    margin-top: 10vh;
+    text-align: center;
+  }
+
   h1, h3 {
     color: var(--theme-primary);
   }

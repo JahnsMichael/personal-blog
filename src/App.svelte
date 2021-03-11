@@ -8,7 +8,6 @@
 <style global>
   @import "../static/global.css";
   @import "../static/prism.css";
-  @import "../static/blog.pcss";
 
   :global(html) {
     background-color: var(--theme-background);

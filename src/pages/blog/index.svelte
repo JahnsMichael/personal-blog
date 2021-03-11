@@ -1,8 +1,9 @@
 <script>
   import PostNavs from "../../components/PostNavs.svelte"
   import { layout } from "@roxi/routify"
+  import Card from "../../components/Card.svelte"
 </script>
 
-<h1>Blog</h1>
-
-<PostNavs children={$layout.children}/>
+<Card title="Blog" summary="Kumpulan tulisan-tulisan random. Silakan baca-baca.">
+  <PostNavs children={$layout.children}/>
+</Card>

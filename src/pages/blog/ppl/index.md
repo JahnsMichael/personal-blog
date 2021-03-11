@@ -6,10 +6,6 @@ layout: blog
 published: 2021-03-07
 ---
 
-# {title}
-
-<p style="text-align:center">{summary}</p>
-
 <script>
   import PostNavs from "../../../components/PostNavs.svelte"
   import { layout as fileLayout } from "@roxi/routify"

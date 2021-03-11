@@ -1,7 +1,7 @@
 ---
+title: About Me
+summary: "If you want to know more about me"
 layout: blog
+published: draft
 ---
 
-# Why hello!
-
-### I'm written in markdown

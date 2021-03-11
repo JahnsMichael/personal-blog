@@ -1,6 +1,5 @@
 <script>
   import { url } from "@roxi/routify";
-  import marked from "marked";
   export let children;
 
   const posts = children
@@ -26,9 +25,9 @@
 <ul class="posts">
   {#if posts.length}
     {#each posts as { meta, path }}
-      <li class="card">
-        <a class="title" href={$url(path)}>{meta.frontmatter.title}</a>
-        {@html marked(meta.frontmatter.summary)}
+      <li class="post">
+        <a class="post-title" href={$url(path)}>{meta.frontmatter.title}</a>
+        <p class="post-summary">{meta.frontmatter.summary}</p>
       </li>
     {/each}
   {/if}
@@ -37,9 +36,9 @@
 <ul class="posts">
   {#if folders.length}
     {#each folders as { meta, path }}
-      <li class="card">
-        <a class="title" href={$url(path)}>{meta.frontmatter.title}</a>
-        {@html marked(meta.frontmatter.summary)}
+      <li class="post">
+        <a class="post-title" href={$url(path)}>{meta.frontmatter.title}</a>
+        <p class="post-summary" >{meta.frontmatter.summary}</p>
       </li>
     {/each}
   {/if}
@@ -51,7 +50,30 @@
 
 <style>
   .empty-msg {
-    text-align: center;
     color: var(--theme-primary);
+  }
+
+  .posts {
+    padding: 0;
+  }
+
+  .post {
+    margin: 3em 0;
+    list-style: none;
+  }
+
+  .post-title {
+    font-size: 1.75em;
+    text-decoration: none;
+    color: var(--theme-primary);
+  }
+
+  .post-title:hover {
+    color: var(--theme-primary);
+  }
+
+  .post-summary {
+    margin: 10px 0;
+    margin-top: 5px;
   }
 </style>

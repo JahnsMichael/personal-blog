@@ -1,14 +1,12 @@
 ---
 title: My second Post
-published: 2020-06-21
+published: draft
 summary: |
   #### Summary of my second post
   Read on
 layout: blog
 publish: false
 ---
-
-# {title}
 
 ## Origine medias morari non humo accepit flammas
 
