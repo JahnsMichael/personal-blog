@@ -1,12 +1,12 @@
 ---
 title: My first Post
-published: 2020-06-21T21:36:59.459Z
-author: jakobrosenberg
+published: 2020-06-21
 summary: |  
   Lorem markdownum, laude, superesse vires. Nisi iuveni, celsior.    
   Est ut erat. Cum Iovis ut donavi petitos et, at fugit vincemur ubi: a dixit
   credit, eras Aesone.
 layout: blog
+publish: false
 ---
 
 #### Anchor links using remark-slug

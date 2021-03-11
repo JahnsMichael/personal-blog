@@ -1,11 +1,11 @@
 ---
 title: My second Post
-published: 2020-06-21T21:36:59.459Z
-author: jakobrosenberg
+published: 2020-06-21
 summary: |
   #### Summary of my second post
   Read on
 layout: blog
+publish: false
 ---
 
 # {title}
