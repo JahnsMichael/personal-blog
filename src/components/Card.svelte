@@ -1,53 +1,11 @@
-<script>
-  import { layout } from "@roxi/routify";
-  import Breadcrumb from "./Breadcrumb.svelte"
-  export let title, summary;
-  export let published = null;
-
-  if (published && published !== "draft") {
-    published = `Published on ${published.slice(0,10)}`;
-  } else if (published === "draft") {
-    published = "This post is not yet published."
-  }
-
-</script>
-
-
-<div class="card">
-  <Breadcrumb fileLayout={$layout} />
-  <section class="frontmatter">
-    <h1>{title}</h1>
-    {summary}
-    <hr>
-    {#if published}
-      {published}
-    {/if}
-  </section>
+<dir class="card">
   <slot />
-</div>
+</dir>
 
 <style>
   .card {
     background: var(--theme-background);
     padding: 2vh 5vw;
     margin: 0 5vw;
-  }
-  
-  h1 {
-    font-weight: normal;
-    font-size: 2.5em;
-    margin: 10px 0;
-  }
-
-  hr {
-    border: 1px solid var(--theme-text);
-    opacity: 0.5;
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-
-  .frontmatter {
-    margin: 4em 0;
-    margin-top: 3em;
   }
 </style>

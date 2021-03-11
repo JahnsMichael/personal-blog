@@ -28,8 +28,6 @@ import { url } from "@roxi/routify";
   }
 
   breadcrumb = getLink(fileLayout, breadcrumb);
-
-  console.log({fileLayout, breadcrumb});
 </script>
 
 <div class="breadcrumb">
