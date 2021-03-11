@@ -1,4 +1,6 @@
 <script>
+  import { layout } from "@roxi/routify";
+  import Breadcrumb from "./Breadcrumb.svelte"
   export let title, summary;
   export let published = null;
 
@@ -10,7 +12,9 @@
 
 </script>
 
+
 <div class="card">
+  <Breadcrumb fileLayout={$layout} />
   <section class="frontmatter">
     <h1>{title}</h1>
     {summary}
@@ -44,5 +48,6 @@
 
   .frontmatter {
     margin: 4em 0;
+    margin-top: 3em;
   }
 </style>

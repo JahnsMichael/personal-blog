@@ -4,6 +4,7 @@
   import Card from "../../components/Card.svelte"
 </script>
 
+
 <Card title="Blog" summary="Kumpulan tulisan-tulisan random. Silakan baca-baca.">
   <PostNavs children={$layout.children}/>
 </Card>
