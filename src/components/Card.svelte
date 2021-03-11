@@ -1,5 +1,6 @@
 <script>
-  export let title, summary, published;
+  export let title, summary;
+  export let published = null;
 
   if (published && published !== "draft") {
     published = `Published on ${published.slice(0,10)}`;

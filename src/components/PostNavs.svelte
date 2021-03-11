@@ -19,7 +19,6 @@
       };
     });
 
-  console.log({children, posts, folders});
 </script>
 
 <ul class="posts">
