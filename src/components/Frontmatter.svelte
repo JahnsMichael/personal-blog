@@ -1,5 +1,7 @@
-<script>
-  export let title, summary, published;
+<script lang="ts">
+  export let title:string, 
+  summary:string|undefined, 
+  published:string|undefined;
 </script>
 
 <section class="frontmatter">

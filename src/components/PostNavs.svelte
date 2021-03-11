@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { url } from "@roxi/routify";
-  export let children;
+  export let children: Array<ClientNodeApi>;
 
   const posts = children
     .filter((c) => !c.__file.isDir && c.meta.frontmatter.published !== "draft")

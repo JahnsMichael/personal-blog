@@ -53,7 +53,7 @@ function baseConfig(config, ctx) {
 
     const rollupConfig = {
         inlineDynamicImports: !dynamicImports,
-        input: `src/main.js`,
+        input: `src/main.ts`,
         output: {
             name: 'routify_app',
             sourcemap: true,

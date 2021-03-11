@@ -1,13 +1,18 @@
-<script>
-  import { layout, url } from "@roxi/routify";
-  export let fileLayout;
+<script lang="ts">
+  import { url } from "@roxi/routify";
+  export let fileLayout: ClientNodeApi;
 
-  let breadcrumb = [{
+  interface Link {
+    title: string,
+    path: string
+  }
+
+  let breadcrumb: Array<Link> = [{
     title: fileLayout.title,
     path: fileLayout.path
   }];
 
-  const getLink = (layout, breadcrumb) => {
+  const getLink = (layout:ClientNodeApi, breadcrumb:Array<Link>): Array<Link> => {
     let parent = layout.parent;
     if (parent) {
       breadcrumb = [{
