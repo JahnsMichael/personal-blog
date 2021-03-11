@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { layout } from "@roxi/routify";
   import Breadcrumb from "../components/Breadcrumb.svelte";
   import Card from "../components/Card.svelte";
