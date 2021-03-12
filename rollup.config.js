@@ -4,8 +4,16 @@ import { mdsvex } from 'mdsvex'
 import autoPreprocess from 'svelte-preprocess'
 import postcssPresetEnv from 'postcss-preset-env'
 import postcssImport from 'postcss-import'
+import alias from '@rollup/plugin-alias';
 
 const production = !process.env.ROLLUP_WATCH;
+
+const aliases = alias({
+  resolve: ['.svelte', '.js', '.png', '.svg', '.md', '.css'], //optional, by default this will just look for .js files or folders
+  entries: [
+    { find: '^', replacement: 'src' }
+  ]
+});
 
 export const config = {
   staticDir: 'static',
@@ -13,7 +21,10 @@ export const config = {
   buildDir: `dist/build`,
   serve: !production,
   production,
-  rollupWrapper: cfg => cfg,
+  rollupWrapper: cfg => {
+    cfg.plugins = [...cfg.plugins, aliases]
+    return cfg;
+  },
   svelteWrapper: svelte => {
     svelte.preprocess = [
       autoPreprocess({
