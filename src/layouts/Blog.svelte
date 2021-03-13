@@ -4,6 +4,7 @@
   import Breadcrumb from "^/components/Breadcrumb.svelte";
   import Card from "^/components/Card.svelte";
   import Frontmatter from "^/components/Frontmatter.svelte";
+  import Toc from "^/components/Toc.svelte";
 
   export let title, summary;
   export let published = null;
@@ -21,4 +22,7 @@
     <Frontmatter {title} {summary} {published} />
     <slot />
   </div>
+  <Toc>
+    <slot name="toc" />
+  </Toc>
 </Card>
