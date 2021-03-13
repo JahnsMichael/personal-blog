@@ -6,6 +6,12 @@ layout: blog
 published: draft
 ---
 
+<script>
+  import Toc from "^/components/Toc.svelte";
+</script>
+
+<Toc>
+
 - [Basic Syntax](#basic-syntax)
   - [Heading](#heading)
   - [Italic](#italic)
@@ -25,6 +31,8 @@ published: draft
   - [Definition List](#definition-list)
   - [Strikethrough](#strikethrough)
   - [Task List](#task-list)
+
+</Toc>
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
