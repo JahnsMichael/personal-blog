@@ -1,9 +1,8 @@
 <script>
-  import PageTransition from "^/components/PageTransition.svelte"
+  import { fade } from "svelte/transition";
 </script>
 
-<PageTransition>
-<div>
+<div in:fade>
 Hi, my name is Jahns Michael.
 
 You can call me Jahns or Michael.
@@ -19,7 +18,6 @@ There's not much in here anyway.
 
 At least now.
 </div>
-</PageTransition>
 
 <style>
   div {

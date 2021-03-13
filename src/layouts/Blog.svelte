@@ -1,9 +1,9 @@
 <script>
+  import { fade } from "svelte/transition";
   import { layout } from "@roxi/routify";
   import Breadcrumb from "^/components/Breadcrumb.svelte";
   import Card from "^/components/Card.svelte";
   import Frontmatter from "^/components/Frontmatter.svelte";
-  import PageTransition from "^/components/PageTransition.svelte";
 
   export let title, summary;
   export let published = null;
@@ -17,8 +17,8 @@
 
 <Card>
   <Breadcrumb fileLayout={$layout} />
-  <PageTransition>
+  <div in:fade>
     <Frontmatter {title} {summary} {published} />
     <slot />
-  </PageTransition>
+  </div>
 </Card>
