@@ -28,4 +28,8 @@
   a:hover {
     text-decoration: none;
   }
+
+  nav.header > a:hover {
+    color: var(--theme-primary);
+  }
 </style>
