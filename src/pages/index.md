@@ -1,3 +1,8 @@
+<script>
+  import PageTransition from "^/components/PageTransition.svelte"
+</script>
+
+<PageTransition>
 <div>
 Hi, my name is Jahns Michael.
 
@@ -14,6 +19,7 @@ There's not much in here anyway.
 
 At least now.
 </div>
+</PageTransition>
 
 <style>
   div {
