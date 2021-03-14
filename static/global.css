@@ -56,6 +56,8 @@ button {
   outline: none;
 }
 
+/* custom */
+
 /* override prism styling */
 code, pre, .monospace {
   font-family: "Victor Mono", "Overpass Mono", "Courier New", monospace !important;
@@ -69,4 +71,22 @@ img {
 .container {
   max-width: 1000px;
   margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.2em;
+  padding-top: 1em;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--theme-background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme-primary); 
 }
