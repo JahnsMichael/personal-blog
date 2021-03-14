@@ -34,6 +34,7 @@
     left: 0;
     border: none;
     background-color: var(--theme-primary);
+    border-radius: 0%;
     color: var(--theme-background);
   }
 

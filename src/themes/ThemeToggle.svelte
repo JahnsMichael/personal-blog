@@ -5,7 +5,7 @@
 </script>
 
 <button on:click={toggle}>
-  <Icon data={$theme.symbol} scale="2"/>
+  {$theme.name}
 </button>
 
 <style>
@@ -13,9 +13,9 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 1em;
     border: none;
-    background-color: transparent;
-    color: var(--theme-primary);
+    border-radius: 0%;
+    background-color: var(--theme-primary);
+    color: var(--theme-background);
   }
 </style>
