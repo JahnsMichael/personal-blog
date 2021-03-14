@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap'); */
 
 html,
 body {
@@ -58,7 +58,7 @@ button {
 
 /* override prism styling */
 code, pre {
-  font-family: 'Victor Mono' !important
+  font-family: 'Victor Mono', monospace !important
 }
 
 img {
