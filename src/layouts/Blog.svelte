@@ -22,7 +22,9 @@
     <Frontmatter {title} {summary} {published} />
     <slot />
   </div>
+  {#if $$slots.toc}
   <Toc>
     <slot name="toc" />
   </Toc>
+  {/if}
 </Card>
