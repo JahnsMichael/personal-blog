@@ -1,5 +1,8 @@
 <script>
   import { url } from "@roxi/routify";
+  import { chevronRight } from "svelte-awesome/icons";
+  import Icon from "svelte-awesome";
+
   export let fileLayout;
 
   let breadcrumb = [{
@@ -25,13 +28,21 @@
 
 <div class="breadcrumb">
   {#each breadcrumb as {title, path}}
-    <span>&gt <a href="{$url(path)}">{(title ? title : "home")}</a> </span>
+    <span>
+      <span class="sep"><Icon data={chevronRight} scale="0.6"/></span>  
+      <a href="{$url(path)}">{(title ? title : "home")}</a>  
+    </span>
   {/each}
 </div>
 
 <style>
   .breadcrumb {
-    font-family: 'Victor Mono', monospace;
+    font-family: 'Victor Mono', 'Overpass', sans-serif;
+  }
+
+  .sep {
+    opacity: 80%;
+    color: var(--theme-text);
   }
 </style>
 
