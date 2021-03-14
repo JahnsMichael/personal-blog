@@ -31,7 +31,7 @@
 
 <style>
   .breadcrumb {
-    font-family: Victor Mono;
+    font-family: 'Victor Mono', monospace;
   }
 </style>
 
