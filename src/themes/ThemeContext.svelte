@@ -37,8 +37,10 @@
   });
 
   onMount(() => {
-    const darkMode = window.matchMedia("(prefers-color-scheme: dark)")
-    _current = darkMode.matches ? "dark" : "light";
+    if (typeof window.matchMedia === "function") {
+      const darkMode = window.matchMedia("(prefers-color-scheme: dark)");
+      _current = darkMode.matches ? "dark" : "light";
+    }
     setRootColors(getThemeByName(_current));
   });
 </script>
