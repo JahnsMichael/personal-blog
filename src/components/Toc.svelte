@@ -13,9 +13,10 @@
   <div
     class="toc"
     on:click={toggleShow}
-    transition:fly={{ x: -200, duration: 200 }}
+    transition:fly={{ x: 200, duration: 200 }}
   >
     <h3><a href="#top">Document Outline</a></h3>
+    <a href="#top">(go to top)</a>
     <slot>
       <ul>
         <li>No Header in this post</li>
@@ -31,7 +32,7 @@
   .toc-btn {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     border: none;
     background-color: var(--theme-primary);
     border-radius: 0%;
@@ -48,7 +49,7 @@
 
   .toc {
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
     background-color: var(--theme-primary);
     padding: 2em;
