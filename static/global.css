@@ -58,6 +58,10 @@ button {
 
 /* custom */
 
+body {
+  line-height: 1.7;
+}
+
 /* override prism styling */
 code, pre, .monospace {
   font-family: "Victor Mono", "Overpass Mono", "Courier New", monospace !important;
@@ -76,12 +80,9 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2em;
   padding-top: 1em;
+  line-height: 1.25;
   color: var(--theme-primary);
-  opacity: 80%;
-}
-
-p {
-  line-height: 1.7;
+  opacity: 70%;
 }
 
 li {
