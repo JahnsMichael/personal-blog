@@ -76,6 +76,16 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2em;
   padding-top: 1em;
+  color: var(--theme-primary);
+  opacity: 80%;
+}
+
+p {
+  line-height: 1.7;
+}
+
+li {
+  margin: 0.7em 0;
 }
 
 /* Scrollbar */
