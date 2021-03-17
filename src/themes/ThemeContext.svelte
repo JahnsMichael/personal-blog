@@ -20,6 +20,11 @@
   let _current = themes[0].name;
   const Theme = writable(getThemeByName(_current));
 
+  const updateTheme = (themeName) => {
+    Theme.update((t) => ({ ...t, ...getThemeByName(themeName) }));
+    setRootColors(getThemeByName(themeName));
+  }
+
   setContext("theme", {
     theme: Theme,
     toggle: () => {
@@ -27,13 +32,9 @@
       _current =
         themes[_currentIndex === themes.length - 1 ? 0 : (_currentIndex += 1)]
           .name;
-      Theme.update((t) => ({ ...t, ...getThemeByName(_current) }));
-      setRootColors(getThemeByName(_current));
+      updateTheme(_current);
     },
-    setTheme: (themeName) => {
-      Theme.update((t) => ({ ...t, ...getThemeByName(themeName) }));
-      setRootColors(getThemeByName(themeName));
-    },
+    setTheme: updateTheme
   });
 
   onMount(() => {
@@ -41,7 +42,7 @@
       const darkMode = window.matchMedia("(prefers-color-scheme: dark)");
       _current = darkMode.matches ? "dark" : "light";
     }
-    setRootColors(getThemeByName(_current));
+    updateTheme(_current);
   });
 </script>
 
