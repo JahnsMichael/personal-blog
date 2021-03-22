@@ -1,10 +1,12 @@
 <script>
+  import marked from "marked";
+
   export let title, summary, published;
 </script>
 
 <section class="frontmatter">
-  <h1>{title}</h1>
-  {summary}
+  <h1>{@html marked(title)}</h1>
+  {@html marked(summary)}
   <hr />
   {#if published}
     {published}

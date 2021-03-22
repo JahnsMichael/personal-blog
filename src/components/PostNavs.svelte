@@ -1,5 +1,7 @@
 <script>
   import { url } from "@roxi/routify";
+  import marked from "marked";
+
   export let children;
 
   const posts = children
@@ -25,8 +27,8 @@
   {#if posts.length}
     {#each posts as { meta, path }}
       <li class="post">
-        <a class="post-title" href={$url(path)}>{meta.frontmatter.title}</a>
-        <p class="post-summary">{meta.frontmatter.summary}</p>
+        <a class="post-title" href={$url(path)}>{@html marked(meta.frontmatter.title)}</a>
+        <p class="post-summary">{@html marked(meta.frontmatter.summary)}</p>
       </li>
     {/each}
   {/if}
@@ -36,8 +38,8 @@
   {#if folders.length}
     {#each folders as { meta, path }}
       <li class="post">
-        <a class="post-title" href={$url(path)}>{meta.frontmatter.title}</a>
-        <p class="post-summary" >{meta.frontmatter.summary}</p>
+        <a class="post-title" href={$url(path)}>{@html marked(meta.frontmatter.title)}</a>
+        <p class="post-summary" >{@html marked(meta.frontmatter.summary)}</p>
       </li>
     {/each}
   {/if}
