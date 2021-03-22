@@ -89,6 +89,15 @@ li {
   margin: 0.7em 0;
 }
 
+blockquote {
+  border-left: var(--theme-primary) solid 5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: 'Alegreya', serif;
+}
+
 /* Scrollbar */
 
 /* width */
