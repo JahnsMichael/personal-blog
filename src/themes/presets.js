@@ -3,7 +3,7 @@ export const presets = [
       name: "light",
       colors: {
         text: "#676778",
-        background: "#f1f1f1",
+        background: "#ffffff",
         primary: "#ff3e00"
       }
     },
