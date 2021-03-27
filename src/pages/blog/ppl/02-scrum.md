@@ -112,7 +112,7 @@ Beberapa isu lain yang tidak berkaitan dengan Scrum:
 
 ## Kesimpulan
 
-Mungkin blog ini jadinya lebih ke *curhat* dibandingkan menjelaskan pemahaman saya tentang *Scrum*. Namun, saya bisa belajar banyak dari menulis blog ini. Saya mengevaluasi hal-hal yang masih kurang dan salah dalam bekerja menggunakan kerangka kerja *Scrum* ini. Saya merasa *Scrum* adalah kerangka kerja yang sangat baik, bukan dalam pengembangan software saja, melainkan dapat diterapkan pula di jenis pekerjaan lainnya yang membutuhkan kerja sama tim.
+Mungkin blog ini jadinya lebih ke *curhat* dibandingkan menjelaskan pemahaman saya tentang *Scrum*. Namun, saya bisa belajar banyak dari menulis blog ini. Saya mengevaluasi hal-hal yang masih kurang dan salah dalam bekerja menggunakan kerangka kerja *Scrum* ini. Saya merasa *Scrum* adalah kerangka kerja yang sangat baik, bukan dalam pengembangan software saja, melainkan dapat diterapkan pula di jenis pekerjaan lainnya yang membutuhkan kerja sama tim. *Scrum* adalah kerangka kerja yang dinamis dan cenderung cepat dalam menghasilkan suatu produk ataupun mencapai target.
 
 Semoga blog ini (walaupun isinya hanya cerita saya) dapat berguna bagi pembaca sekalian yang mungkin sedang melakukan *Scrum* pula dan punya kendala yang serupa. 
 
