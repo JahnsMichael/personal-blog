@@ -7,9 +7,9 @@
 
   // Utility
   const setRootColors = (theme) => {
-    for (let [prop, color] of Object.entries(theme.colors)) {
+    for (let [prop, val] of Object.entries(theme.vars)) {
       let varString = `--theme-${prop}`;
-      document.documentElement.style.setProperty(varString, color);
+      document.documentElement.style.setProperty(varString, val);
     }
     document.documentElement.style.setProperty("--theme-name", theme.name);
   };

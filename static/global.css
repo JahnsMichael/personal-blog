@@ -11,12 +11,12 @@ body {
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
-  font-family: 'Overpass', sans-serif;
+  font-family: var(--theme-font), sans-serif;
 }
 
 a {
   /* color: rgba(0,0,0,0.7);   */
-  color: var(--theme-primary);  
+  color: var(--theme-blue);  
   
   &:visited {
     /* color: rgba(0,0,0,0.6); */
@@ -81,7 +81,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2em;
   padding-top: 1em;
   line-height: 1.25;
-  color: var(--theme-primary);
+  color: var(--theme-green);
+}
+
+strong, em, i {
+  color: var(--theme-red);
 }
 
 li {
@@ -89,12 +93,13 @@ li {
 }
 
 blockquote {
-  border-left: var(--theme-primary) solid 5px;
+  border-left: var(--theme-blue) solid 5px;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  font-family: 'Alegreya', serif;
+  font-style: italic;
+  color: var(--theme-blue);
 }
 
 /* Scrollbar */
