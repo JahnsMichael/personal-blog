@@ -13,6 +13,7 @@ layout: blog
   - [Kumpulkan data](#kumpulkan-data)
   - [Analisis data](#analisis-data)
   - [Buat user persona yang mewakili hasil analisis data](#buat-user-persona-yang-mewakili-hasil-analisis-data)
+- [Contoh Persona untuk Aplikasi TBCare](#contoh-persona-untuk-aplikasi-tbcare)
 - [Kesimpulan](#kesimpulan)
 - [Referensi](#referensi)
 
@@ -75,6 +76,35 @@ Berikut adalah format *user persona* menurut Patrick Faller pada blog [AdobeXD](
 - Frustrations (or “pain points”)
 - Behaviors
 - Bits of personality (e.g. a quote or slogan that captures the personality)
+
+# Contoh Persona untuk Aplikasi TBCare
+
+<script>
+  import Persona from "./_components/Persona.svelte";
+
+  let user1 = {
+    name: "Erik Supriadi",
+    image_url: "http://ofad.org/files/imagecache/daily_picture/daily-photo/recent-and-random-portraits_8.jpg",
+    role: "Admin PPTI Depok",
+    age: 40,
+    gender: "Pria",
+    location: "Depok",
+    quote: "Bagi saya detail adalah hal yang penting. Saya perlu melihat transparansi dari setiap data sehingga dapat memonitornya dengan baik. Adalah hal yang menggangu bagi saya apabila saya tidak mendapatkan respons secara spontan dari informasi yang saya inginkan."
+  }
+
+  let user2 = {
+    name: "Erika Gunadi",
+    image_url: "https://yt3.ggpht.com/-2KmkwcrbugU/AAAAAAAAAAI/AAAAAAAAAAA/q4-FobPstOA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg",
+    role: "Kader PPTI Depok, beauty vlogger",
+    age: 30,
+    gender: "Wanita",
+    location: "Depok",
+    quote: "Saya senang melakukan pekerjaan sukarela seperti menjadi kader TBCare. Walau demikian, menjadi kader bukanlah pekerjaan tetap saya. Saya memiliki pekerjaan lainnya. Oleh karena itu, saya ingin kegiaran sukarela ini tidak terlalu menyulitkan saya."
+  }
+</script>
+
+<Persona {...user1} />
+<Persona {...user2} />
 
 # Kesimpulan
 
