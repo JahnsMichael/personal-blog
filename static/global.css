@@ -64,7 +64,7 @@ body {
 
 /* override prism styling */
 code, pre, .monospace {
-  font-family: "Victor Mono", "Overpass Mono", "Courier New", monospace !important;
+  font-family: "Victor Mono", monospace !important;
 }
 
 img {

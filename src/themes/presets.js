@@ -8,7 +8,7 @@ export const presets = [
         green: "#C2D94C",
         red: "#F07178",
         blue: "#39BAE6",
-        font: "Overpass"
+        font: "Titillium Web"
       }
     },
     {
@@ -20,7 +20,7 @@ export const presets = [
         green: "#86b300",
         red: "#F07171",
         blue: "#55b4e4",
-        font: "Overpass"
+        font: "Titillium Web"
       }
     },
     {
