@@ -44,13 +44,13 @@ const externalAssetsConfig = () => ({
  * precache all files
  * remember to precache __app.html and 404.svg if caching of all files is disabled
  */
-precacheAndRoute(files);
+// precacheAndRoute(files);
 
 /** precache only fallback files */
-// precacheAndRoute(files.filter(file =>
-//   ['__app.html', '404.svg']
-//     .includes(file.url)
-// ))
+precacheAndRoute(files.filter(file =>
+  ['__app.html', '404.svg']
+    .includes(file.url)
+))
 
 skipWaiting(); // auto update service workers across all tabs when new release is available
 clientsClaim(); // take control of client without having to wait for refresh
